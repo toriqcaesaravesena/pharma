@@ -6,6 +6,39 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/11496/11496733.png" type="image/png">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            bg_main: "url('../../../public/asset/Background.svg')",
+            bg_cta: "url('../../../public/asset/cta.svg')",
+            bg_service: "url('../../../public/asset/services/banner.svg')",
+            bg_bot: "url('../../../public/asset/services/bot-service.svg')",
+            bg_blog: "url('../../../public/asset/blog/bg2.svg')",
+            bg_team: "url('../../../public/asset/team/Team.svg')",
+            bg_Contact: "url('../../../public/asset/contactUs.svg')",
+            bg_login: "url('../../../public/asset/Banner.jpg')"
+          },
+          fontFamily: {
+            Inter: "'Inter', sans-serif",
+            Lato: "'Lato', sans-serif",
+            Montserrat: "'Montserrat', sans-serif",
+          },
+          colors: {
+            primary: "#0152A8",
+            green: "#0fe3af",
+            greyy: "#F1F1F1",
+          },
+          textColor: {
+            header1: "#143450",
+            header2: "#1C1C1C",
+          },
+        }
+      }
+    }
+  </script>
     <title>HiDoc</title>
 </head>
 <body>
@@ -16,7 +49,7 @@
             </h2>
             <form class="mt-8 space-y-6" action="#">
                 <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
                     <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@company.com" required>
                 </div>
                 <div>

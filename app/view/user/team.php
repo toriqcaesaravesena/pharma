@@ -13,6 +13,39 @@
       type="image/png"
     />
     <link rel="stylesheet" href="../../../public/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            bg_main: "url('../../../public/asset/Background.svg')",
+            bg_cta: "url('../../../public/asset/cta.svg')",
+            bg_service: "url('../../../public/asset/services/banner.svg')",
+            bg_bot: "url('../../../public/asset/services/bot-service.svg')",
+            bg_blog: "url('../../../public/asset/blog/bg2.svg')",
+            bg_team: "url('../../../public/asset/team/Team.svg')",
+            bg_Contact: "url('../../../public/asset/contactUs.svg')",
+            bg_login: "url('../../../public/asset/Banner.jpg')"
+          },
+          fontFamily: {
+            Inter: "'Inter', sans-serif",
+            Lato: "'Lato', sans-serif",
+            Montserrat: "'Montserrat', sans-serif",
+          },
+          colors: {
+            primary: "#0152A8",
+            green: "#0fe3af",
+            greyy: "#F1F1F1",
+          },
+          textColor: {
+            header1: "#143450",
+            header2: "#1C1C1C",
+          },
+        }
+      }
+    }
+  </script>
     <title>HiDoc</title>
   </head>
   <body class="inset-0">
@@ -129,9 +162,9 @@
       </div>
       <div>
         <button
-          class="w-[11.75rem] h-[3.8rem] bg-green font-semibold text-lg hover:bg-emerald-300"
+          class="w-[11.75rem] h-[3.8rem] bg-slate-400 font-semibold text-lg hover:bg-slate-300 text-white tracking-[0.1rem] rounded-full"
         >
-          <a href="appointment.php">Appointment</a>
+          <a href="login.php">Login</a>
         </button>
       </div>
     </section>
@@ -295,7 +328,7 @@
           <p
             class="font-Lato tracking-[0.3rem] leading-5 text-white text-sm flex justify-end"
           >
-            Book An Appointment
+            <a href="appointment.php">Book An Appoinment</a>
           </p>
         </div>
         <div class="mb-7 flex">
@@ -306,15 +339,15 @@
         </div>
         <div class="flex flex-row gap-3">
           <div
-            class="bg-green px-[1.2rem] py-4 font-medium text-sm text-center"
+            class="bg-green px-[1.2rem] py-4 font-medium text-sm text-center  cursor-pointer"
           >
-            <p class="text-black font-medium">Book an Appointment</p>
+            <p class="text-black font-medium"><a href="appointment.php">Book An Appointment</a></p>
           </div>
           <p class="text-white flex justify-center items-center font-medium">
             (OR)
           </p>
-          <div class="bg-white px-[1.2rem] py-4 text-center">
-            <p class="text-black font-medium">Call: 1-800-123-9999</p>
+          <div class="bg-white px-[1.2rem] py-4 text-center  cursor-pointer">
+            <p class="text-black font-medium"><a href="https://wa.me/081338064094">Call: (+62) 813 - 3806 - 4094</a></p>
           </div>
         </div>
       </div>
@@ -350,7 +383,7 @@
             <div class="flex gap-2 items-center cursor-pointer">
               <img src="../../../public/asset/footer/phone.svg" />
 
-              <p>(+22) 123 - 4567 - 900</p>
+              <p><a href="https://wa.me/081338064094">(+64) 813 - 3806 - 4094</a></p>
             </div>
 
             <div class="flex gap-2 items-center cursor-pointer">
@@ -387,24 +420,21 @@
               Explore
             </p>
             <ul class="text-base flex flex-col gap-2 text-[#545454] font-Lato">
-              <li class="cursor-pointer hover:text-primary">Home</li>
-              <li class="cursor-pointer hover:text-primary">Services</li>
-              <li class="cursor-pointer hover:text-primary">About us</li>
-              <li class="cursor-pointer hover:text-primary">Testimonials</li>
-              <li class="cursor-pointer hover:text-primary">News</li>
+              <li class="cursor-pointer hover:text-primary"><a href="user.php">Home</a></li>
+              <li class="cursor-pointer hover:text-primary"><a href="services.php">Services</a></li>
+              <li class="cursor-pointer hover:text-primary"><a href="about.php">About us</a></li>
+              <li class="cursor-pointer hover:text-primary"><a href="blog.php">News</a></li>
             </ul>
           </div>
           <div>
             <p
               class="text-xl font-semibold font-Montserrat text-[#1C1C1C] mb-[0.88rem]"
             >
-              Utility Pages
+              Administrator
             </p>
             <ul class="text-base gap-2 flex flex-col text-[#545454] font-Lato">
-              <li class="cursor-pointer hover:text-primary">Style Guide</li>
-              <li class="cursor-pointer hover:text-primary">Changelog</li>
+              <li class="cursor-pointer hover:text-primary"><a href="../admin/login.php">Login</a></li>
               <li class="cursor-pointer hover:text-primary">Licenses</li>
-              <li class="cursor-pointer hover:text-primary">Protected Page</li>
               <li class="cursor-pointer hover:text-primary">404 Page</li>
             </ul>
           </div>
@@ -426,7 +456,7 @@
             <button
               class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
             >
-              Submit
+              <a href="appointment.php">Submit</a>
             </button>
           </div>
         </div>

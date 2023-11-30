@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/11496/11496733.png" type="image/png">
     <link rel="stylesheet" href="../../../public/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            bg_main: "url('../../../public/asset/Background.svg')",
+            bg_cta: "url('../../../public/asset/cta.svg')",
+            bg_service: "url('../../../public/asset/services/banner.svg')",
+            bg_bot: "url('../../../public/asset/services/bot-service.svg')",
+            bg_blog: "url('../../../public/asset/blog/bg2.svg')",
+            bg_team: "url('../../../public/asset/team/Team.svg')",
+            bg_Contact: "url('../../../public/asset/contactUs.svg')",
+            bg_login: "url('../../../public/asset/Banner.jpg')"
+          },
+          fontFamily: {
+            Inter: "'Inter', sans-serif",
+            Lato: "'Lato', sans-serif",
+            Montserrat: "'Montserrat', sans-serif",
+          },
+          colors: {
+            primary: "#0152A8",
+            green: "#0fe3af",
+            greyy: "#F1F1F1",
+          },
+          textColor: {
+            header1: "#143450",
+            header2: "#1C1C1C",
+          },
+        }
+      }
+    }
+  </script>
     <title>HiDoc</title>
-    <style>
-      html{
-      scroll-behavior: smooth;
-     }
-    </style>
 </head>
 <body class="m-0 p-0"> 
      <section
@@ -36,6 +64,9 @@
           </p>
         </div>
       </div>
+      <!-- <div class="w-[8rem] h-[2.5rem] rounded-lg font-Inter text-base cursor-pointer pt-[0.4rem] text-white text-center justify-center border border-white hover:bg-white hover:text-black">
+        <p>Login</p>
+      </div> -->
     </section>
     <section
       class="flex px-[17%] justify-between py-10 items-center text-black"
@@ -126,9 +157,9 @@
       </div>
       <div>
         <button
-          class="w-[11.75rem] h-[3.8rem] bg-green font-semibold text-lg hover:bg-emerald-300"
+          class="w-[11.75rem] h-[3.8rem] bg-slate-400 font-semibold text-lg hover:bg-slate-300 text-white tracking-[0.1rem] rounded-full"
         >
-          <a href="appointment.php">Appointment</a>
+          <a href="login.php">Login</a>
         </button>
       </div>
     </section>
@@ -147,7 +178,7 @@
                 </div>
                 <div class="mt-7">
                     <button class="w-[11.75rem] h-[3.8rem] bg-primary font-normal text-base text-white hover:bg-blue-700">
-                        Get Started
+                        <a href="about.php">Get Started</a>
                     </button>
                 </div>
             </div>
@@ -172,7 +203,7 @@
             </div>
             <div>
                 <button class="w-[11.75rem] h-[3.8rem] bg-green font-semibold text-xs text-header2 mt-5 hover:bg-emerald-300 rounded-[50px]">
-                    Book an Appointment
+                    <a href="appointment.php">Book an Appointment</a>
                 </button>
             </div>
         </div>
@@ -212,7 +243,7 @@
 
               
                     <div>
-                        <button class="mt-[7px] font-Inter font-meidum text-base bg-green hover:bg-emerald-300 text-primary p-5">View All Doctors</button>
+                        <button class="mt-[7px] font-Inter font-meidum text-base bg-green hover:bg-emerald-300 text-primary p-5"><a href="team.php">View All Doctors</a></button>
                     </div>
   
                 
@@ -293,7 +324,7 @@
 
                 <div class="flex gap-2 items-center cursor-pointer">
                 <img src="../../../public/asset/footer/email.svg">
-                <p><a href="#">support@doctorate.com</a></p>
+                <p><a href="">support@doctorate.com</a></p>
                 </div>
             
             <div class="flex gap-[1.625rem] items-center">
@@ -322,12 +353,10 @@
                 </ul>
             </div>
             <div>
-                <p class=" text-xl font-semibold font-Montserrat text-[#1C1C1C] mb-[0.88rem]">Utility Pages</p>
+                <p class=" text-xl font-semibold font-Montserrat text-[#1C1C1C] mb-[0.88rem]">Administrator</p>
                 <ul class=" text-base gap-2 flex flex-col text-[#545454] font-Lato">
-                    <li class=" cursor-pointer hover:text-primary">Style Guide</li>
-                    <li class=" cursor-pointer hover:text-primary">Changelog</li>
+                    <li class=" cursor-pointer hover:text-primary"><a href="../admin/login.php">Login</a></li>
                     <li class=" cursor-pointer hover:text-primary">Licenses</li>
-                    <li class=" cursor-pointer hover:text-primary">Protected Page</li>
                     <li class=" cursor-pointer hover:text-primary">404 Page</li>
                 </ul>
             </div>
@@ -338,7 +367,7 @@
                     <input type="text" placeholder="Your Email Address" class=" px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex">
                 </div>
                 <button class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700">
-                    Submit 
+                    <a href="appoinment.php">Submit</a>
                 </button>
 
             </div>
