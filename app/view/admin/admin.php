@@ -18,7 +18,7 @@
             bg_blog: "url('../../../public/asset/blog/bg2.svg')",
             bg_team: "url('../../../public/asset/team/Team.svg')",
             bg_Contact: "url('../../../public/asset/contactUs.svg')",
-            bg_AdminCRUD: "url'../../../public/asset/admin-background.svg'",
+            bg_AdminCRUD: "url('../../../public/asset/admin/admin-background.png')",
             bg_login: "url('../../../public/asset/Banner.jpg')",
           },
           fontFamily: {
@@ -64,14 +64,15 @@
             }
         }
     </style> -->
-    <title>Administrator</title>
+    <title>Pharma Administrator</title>
 </head>
 <body class="bg-gray-100 font-sans bg-bg_AdminCRUD bg-cover">
 
     <div class="container mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
         <div class="flex justify-between items-center mb-8">
             <h1 class="text-3xl font-bold text-gray-800">Appointment Customer</h1>
-            <button id="openModal" class="bg-blue-500 text-white px-4 py-2 rounded">Tambah Data</button>
+            <button id="openModal" class="bg-blue-500 text-white hover:bg-blue-400 px-4 py-2 ml-[42rem] rounded">Tambah Data</button>
+            <button id="openModal" class="bg-slate-200 text-black hover:bg-slate-100 px-4 py-2 rounded">Logout</button>
         </div>
 
         <table class="w-full border-collapse border rounded-lg overflow-hidden">

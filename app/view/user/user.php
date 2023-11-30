@@ -203,7 +203,7 @@
                 <p class="text-white font-semibold text-3xl">Schedule an imperson or virtual <br> appointment today</p>
             </div>
             <div>
-                <button class="w-[11.75rem] h-[3.8rem] bg-green font-semibold text-xs text-header2 mt-5 hover:bg-emerald-300 rounded-[50px]">
+                <button class="w-[11.75rem] h-[3.8rem] bg-green font-semibold text-sm text-header2 mt-5 hover:bg-emerald-300 rounded-md">
                     <a href="appointment.php">Book an Appointment</a>
                 </button>
             </div>
