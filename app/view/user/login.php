@@ -19,7 +19,8 @@
             bg_blog: "url('../../../public/asset/blog/bg2.svg')",
             bg_team: "url('../../../public/asset/team/Team.svg')",
             bg_Contact: "url('../../../public/asset/contactUs.svg')",
-            bg_login: "url('../../../public/asset/Banner.jpg')"
+            bg_AdminCRUD: "url'../../../public/asset/admin-background.svg'",
+            bg_login: "url('../../../public/asset/Banner.jpg')",
           },
           fontFamily: {
             Inter: "'Inter', sans-serif",

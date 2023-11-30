@@ -26,7 +26,8 @@
             bg_blog: "url('../../../public/asset/blog/bg2.svg')",
             bg_team: "url('../../../public/asset/team/Team.svg')",
             bg_Contact: "url('../../../public/asset/contactUs.svg')",
-            bg_login: "url('../../../public/asset/Banner.jpg')"
+            bg_AdminCRUD: "url'../../../public/asset/admin-background.svg'",
+            bg_login: "url('../../../public/asset/Banner.jpg')",
           },
           fontFamily: {
             Inter: "'Inter', sans-serif",
@@ -162,7 +163,7 @@
       </div>
       <div>
         <button
-          class="w-[11.75rem] h-[3.8rem] bg-slate-400 font-semibold text-lg hover:bg-slate-300 text-white tracking-[0.1rem] rounded-full"
+          class="w-[11.75rem] h-[3.8rem] bg-slate-500 font-semibold text-lg hover:bg-slate-400 text-white tracking-[0.05rem] rounded-lg"
         >
           <a href="login.php">Login</a>
         </button>
@@ -444,7 +445,7 @@
               Administrator
             </p>
             <ul class="text-base gap-2 flex flex-col text-[#545454] font-Lato">
-              <li class="cursor-pointer hover:text-primary"><a href="../admin/login.php">Login</a></li>
+              <li class="cursor-pointer hover:text-primary"><a href="../admin/admin.php">Login</a></li>
               <li class="cursor-pointer hover:text-primary">Licenses</li>
               <li class="cursor-pointer hover:text-primary">404 Page</li>
             </ul>
