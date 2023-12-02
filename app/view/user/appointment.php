@@ -255,7 +255,11 @@
             industry standard dummy text the with the release.
           </p>
           <input type="text" class="h-[3rem] px-7 py-4" placeholder="Name" />
-          <input type="text" class="h-[3rem] px-7 py-4" placeholder="Email" />
+          <!-- <input type="text" class="h-[3rem] px-7 py-4" placeholder="Email" id='address_kirim' /> -->
+          <?php
+          $emailValue = isset($_POST['email_address_footer']) ? $_POST['email_address_footer'] : '';
+          ?>
+          <input type="text" class="h-[3rem] px-7 py-4" placeholder="Email" id="address_kirim" value="<?php echo htmlspecialchars($emailValue); ?>" />
           <input type="text" class="h-[3rem] px-7 py-4" placeholder="Phone" />
           <input
             type="text"
@@ -396,17 +400,21 @@
               distracted
             </p>
             <div>
-              <input
-                type="text"
-                placeholder="Your Email Address"
-                class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex"
-              />
-            </div>
-            <button
-              class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
-            >
-              <a href="appointment.php">Submit</a>
-            </button>
+              <form action="appointment.php" method="post">
+                <input
+                  type="text"
+                  placeholder="Your Email Address"
+                  class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex mb-5"
+                  id="email_address_footer"
+                  name="email_address_footer"
+                />
+                <button
+                class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
+                >
+                Submit
+              </button>
+            </form>
+          </div>
           </div>
         </div>
       </div>

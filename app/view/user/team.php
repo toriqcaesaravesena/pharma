@@ -324,7 +324,7 @@
         class="bg-primary py-[9.3rem] flex flex-col justify-end w-[50%] pl-[16%]"
       >
         <div
-          class="p-1 border-solid border-[#CECECE] border-[1px] justify-end items-center w-max mb-4"
+          class="p-1 border-solid border-[#CECECE] border-[1px] justify-end items-center w-max mb-4 -ml-20"
         >
           <p
             class="font-Lato tracking-[0.3rem] leading-5 text-white text-sm flex justify-end"
@@ -332,15 +332,15 @@
             <a href="appointment.php">Book An Appoinment</a>
           </p>
         </div>
-        <div class="mb-7 flex">
-          <p class="font-Montserrat text-[2.55rem] text-white font-semibold">
+        <div class="mb-7 flex -ml-20">
+          <p class="font-Montserrat text-[2.55rem] text-white font-semibold tracking-[0.3rem]">
             Our Medical Team is <br />
             Ready to Help You.
           </p>
         </div>
         <div class="flex flex-row gap-3">
           <div
-            class="bg-green px-[1.2rem] py-4 font-medium text-sm text-center  cursor-pointer"
+            class="bg-green px-[1.2rem] py-4 font-medium text-sm text-center  cursor-pointer -ml-20"
           >
             <p class="text-black font-medium"><a href="appointment.php">Book An Appointment</a></p>
           </div>
@@ -448,17 +448,21 @@
               distracted
             </p>
             <div>
-              <input
-                type="text"
-                placeholder="Your Email Address"
-                class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex"
-              />
-            </div>
-            <button
-              class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
-            >
-              <a href="appointment.php">Submit</a>
-            </button>
+              <form action="appointment.php" method="post">
+                <input
+                  type="text"
+                  placeholder="Your Email Address"
+                  class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex mb-5"
+                  id="email_address_footer"
+                  name="email_address_footer"
+                />
+                <button
+                class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
+                >
+                <a>Submit</a>
+              </button>
+            </form>
+          </div>
           </div>
         </div>
       </div>

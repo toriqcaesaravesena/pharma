@@ -183,7 +183,7 @@
       </div>
     </section>
 
-    <section class="mt-36 px-[17%]">
+    <section class="-mt-20 px-[17%]">
       <div class="w-full flex flex-col items-center gap-4 mb-[3.5rem]">
         <div
           class="border-solid border-[#CECECE] border-[1px] p-[4px] flex items-center justify-center w-max"
@@ -258,7 +258,7 @@
           </div>
         </div>
       </div>
-      <form
+      <!-- <form
         class="bg-[#DCEDFE] p-[6rem] mt-[4.5rem] gap-5 flex flex-col justify-center"
       >
         <div class="flex flex-row gap-5">
@@ -323,7 +323,7 @@
             <a href=""></a>Send Message
           </button>
         </div>
-      </form>
+      </form> -->
     </section>
 
     <!-- Footer -->
@@ -413,17 +413,21 @@
               distracted
             </p>
             <div>
-              <input
-                type="text"
-                placeholder="Your Email Address"
-                class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex"
-              />
-            </div>
-            <button
-              class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
-            >
-              <a href="appointment.php">Submit</a>
-            </button>
+              <form action="appointment.php" method="post">
+                <input
+                  type="text"
+                  placeholder="Your Email Address"
+                  class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex  mb-5"
+                  id="email_address_footer"
+                  name="email_address_footer"
+                />
+                <button
+                class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
+                >
+                <a>Submit</a>
+              </button>
+            </form>
+          </div>
           </div>
         </div>
       </div>

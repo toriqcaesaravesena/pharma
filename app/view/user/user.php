@@ -302,78 +302,108 @@
     <!-- Footer -->
 
     <section class="px-[3rem] py-[7.37rem] bg-[#FFFFFF]">
-        <div class=" bg-[#E5F2EF] px-[12.8%] flex flex-col py-[5.92rem]">
-
-        <div class="wrapper 1 flex  w-full justify-between">
-
-             <div class="flex gap-2 pharma">
+      <div class="bg-[#E5F2EF] px-[12.8%] flex flex-col py-[5.92rem]">
+        <div class="wrapper 1 flex w-full justify-between">
+          <div class="flex gap-2 pharma">
             <div>
-                <img src="../../../public/asset/Icon.svg" alt="icon" height="34px" width="34px">
+              <img
+                src="../../../public/asset/Icon.svg"
+                alt="icon"
+                height="34px"
+                width="34px"
+              />
             </div>
             <div class="font-Inter font-semibold text-3xl">
-                <p>Pharma</p>
+              <p>Pharma</p>
             </div>
-        </div>
+          </div>
 
-        <div class="flex  gap-[3.31rem]">
+          <div class="flex gap-[3.31rem]">
+            <div class="flex gap-2 items-center cursor-pointer">
+              <img src="../../../public/asset/footer/phone.svg" />
 
-                <div class=" flex gap-2 items-center cursor-pointer" >
-                <img src="../../../public/asset/footer/phone.svg">
+              <p><a href="https://wa.me/081338064094">(+64) 813 - 3806 - 4094</a></p>
+            </div>
 
-                    <p><a href="https://wa.me/081338064094">(+64) 813 - 3806 - 4094</a></p>
-                </div>
+            <div class="flex gap-2 items-center cursor-pointer">
+              <img src="../../../public/asset/footer/email.svg" />
+              <p>support@doctorate.com</p>
+            </div>
 
-                <div class="flex gap-2 items-center cursor-pointer">
-                <img src="../../../public/asset/footer/email.svg">
-                <p><a href="">support@doctorate.com</a></p>
-                </div>
-            
             <div class="flex gap-[1.625rem] items-center">
-                <img src="../../../public/asset/footer/ig.svg" class=" cursor-pointer">
-                <img src="../../../public/asset/footer/fb.svg" class=" cursor-pointer">
-                <img src="../../../public/asset/footer/twitter.svg" class=" cursor-pointer">
+              <img src="../../../public/asset/footer/ig.svg" class="cursor-pointer" />
+              <img src="../../../public/asset/footer/fb.svg" class="cursor-pointer" />
+              <img
+                src="../../../public/asset/footer/twitter.svg"
+                class="cursor-pointer"
+              />
             </div>
+          </div>
         </div>
-    </div>
-        <div class=" flex justify-between mt-[3.94rem]">
+        <!-- <div>
+                
+            </div> -->
+        <div class="flex justify-between mt-[3.94rem]">
+          <div>
+            <p
+              class="font-Montserrat font-semibold leading-[2.6rem] text-3xl text-[#1C1C1C]"
+            >
+              “A Simple Story About <br />The Doctorate Medical <br />Center &
+              Health Care <br />Foundation"
+            </p>
+          </div>
+          <div>
+            <p
+              class="text-xl font-semibold font-Montserrat text-[#1C1C1C] mb-[0.88rem]"
+            >
+              Explore
+            </p>
+            <ul class="text-base flex flex-col gap-2 text-[#545454] font-Lato">
+              <li class="cursor-pointer hover:text-primary"><a href="user.php">Home</a></li>
+              <li class="cursor-pointer hover:text-primary"><a href="services.php">Services</a></li>
+              <li class="cursor-pointer hover:text-primary"><a href="about.php">About us</a></li>
+              <li class="cursor-pointer hover:text-primary"><a href="blog.php">News</a></li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-xl font-semibold font-Montserrat text-[#1C1C1C] mb-[0.88rem]"
+            >
+              Administrator
+            </p>
+            <ul class="text-base gap-2 flex flex-col text-[#545454] font-Lato">
+              <li class="cursor-pointer hover:text-primary"><a href="../admin/admin.php">Login</a></li>
+              <li class="cursor-pointer hover:text-primary">Licenses</li>
+              <li class="cursor-pointer hover:text-primary">404 Page</li>
+            </ul>
+          </div>
+          <div class="flex gap-[1rem] flex-col">
+            <p class="text-xl font-semibold font-Montserrat text-[#1C1C1C]">
+              Book an appointment
+            </p>
+            <p class="text-base gap-2 flex flex-col text-[#545454] font-Lato">
+              It is a long established fact that a reader will <br />be
+              distracted
+            </p>
             <div>
-                <dv>
-                    <p class="font-Montserrat font-semibold leading-[2.6rem] text-3xl text-[#1C1C1C]">
-
-                        “A Simple Story About <br>The Doctorate Medical <br>Center & Health Care <br>Foundation"</p>
-                    </p>
-            </div>
-            <div>
-                <p class=" text-xl font-semibold font-Montserrat text-[#1C1C1C] mb-[0.88rem]">Explore</p>
-                <ul class=" text-base flex flex-col gap-2 text-[#545454] font-Lato">
-                    <li class=" cursor-pointer hover:text-primary"><a href="user.php">Home</a></li>
-                    <li class=" cursor-pointer hover:text-primary"><a href="services.php">Services</a></li>
-                    <li class=" cursor-pointer hover:text-primary"><a href="about.php">About us</a></li>
-                  
-                    <li class=" cursor-pointer hover:text-primary"><a href="blog.php">News</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class=" text-xl font-semibold font-Montserrat text-[#1C1C1C] mb-[0.88rem]">Administrator</p>
-                <ul class=" text-base gap-2 flex flex-col text-[#545454] font-Lato">
-                    <li class=" cursor-pointer hover:text-primary"><a href="../admin/admin.php">Login</a></li>
-                    <li class=" cursor-pointer hover:text-primary">Licenses</li>
-                    <li class=" cursor-pointer hover:text-primary">404 Page</li>
-                </ul>
-            </div>
-            <div class=" flex gap-[1rem] flex-col">
-                <p class=" text-xl font-semibold font-Montserrat text-[#1C1C1C] ">Book an appointment</p>
-                <p class=" text-base gap-2 flex flex-col text-[#545454] font-Lato">It is a long established fact that a reader will <br>be distracted</p>
-                <div>
-                    <input type="text" placeholder="Your Email Address" class=" px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex">
-                </div>
-                <button class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700">
-                    <a href="appoinment.php">Submit</a>
-                </button>
-
-            </div>
+              <form action="appointment.php" method="post">
+                <input
+                  type="text"
+                  placeholder="Your Email Address"
+                  class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex mb-5"
+                  id="email_address_footer"
+                  name="email_address_footer"
+                />
+                <button
+                class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
+                >
+                <a>Submit</a>
+              </button>
+            </form>
+          </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
 </body>
 </html>

@@ -459,17 +459,21 @@
               distracted
             </p>
             <div>
-              <input
-                type="text"
-                placeholder="Your Email Address"
-                class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex"
-              />
-            </div>
-            <button
-              class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
-            >
-              <a href="appointment.php">Submit</a>
-            </button>
+              <form action="appointment.php" method="post">
+                <input
+                  type="text"
+                  placeholder="Your Email Address"
+                  class="px-[1.57rem] py-[1.06rem] w-[20.356rem] h-[3.75rem] items-center flex  mb-5"
+                  id="email_address_footer"
+                  name="email_address_footer"
+                />
+                <button
+                class="px-[2.6rem] py-[1.06rem] bg-primary w-[8.6rem] h-auto text-[#FFFFFF] hover:bg-blue-700"
+                >
+                <a>Submit</a>
+              </button>
+            </form>
+          </div>
           </div>
         </div>
       </div>
